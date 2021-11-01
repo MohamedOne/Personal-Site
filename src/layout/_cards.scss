@@ -1,0 +1,120 @@
+.section-cards {
+    background-color: $color-grey-light-1;
+    padding: 25rem 0;
+    margin-top: -20vh;
+    width: 96vw;
+
+}
+
+.card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    font-size: 2rem;
+    position: relative;
+    height: 50rem;
+
+    &__side {
+        height: 50rem;
+        transition: all .8s ease;
+        color: white;
+        position: absolute;    
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: .3rem;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+        &--front {
+        }
+
+        &--back {
+            transform: rotateY(180deg);
+
+            &-1 {
+                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+            }
+
+            &-2 {
+                background-image: linear-gradient(to right bottom, $color-light, $color-dark);
+            }
+
+            &-3 {
+                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+            }
+        }
+    }
+    
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+    
+    &:hover &__side--back {
+        transform: rotateY(0deg);
+    }
+
+    &__picture {
+        background-size: cover;
+        height: 20rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+        &--1 {
+            background-image: url('../img/github.jpg'), linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+        }
+
+        &--2 {
+            background-image: url('../img/img-desk.jpg'), linear-gradient(to right bottom, $color-light, $color-dark);
+
+        }
+
+        &--3 {
+            background-image: url('../img/img-find.jpg'), linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+
+        }
+    }
+
+    &__heading {
+        font-size: 4rem;
+        font-weight: 200;
+        text-transform: uppercase;
+        position: absolute;
+        top: 13rem;
+        left: 13rem;
+
+    }
+
+    &__heading-span {
+        position: absolute;
+        &--1 {
+            position: relative;
+            top: 10%;
+            left: 10%;
+            background-image: linear-gradient(to right bottom,
+             rgba($color-secondary-light, .75),
+              rgba($color-secondary-dark, .75));
+            padding: 0 .3rem;
+        }
+
+        &--2 {
+            position: relative;
+            top: 10%;
+            left: 10%;
+            background-image: linear-gradient(to right bottom,
+             rgba($color-light, .75),
+              rgba($color-dark, .75));
+            padding: 0 .3rem;
+        }
+
+        &--3 {
+            position: relative;
+            top: 10%;
+            left: 10%;
+            background-image: linear-gradient(to right bottom,
+             rgba($color-tertiary-light, .75),
+              rgba($color-tertiary-dark, .75));
+            padding: 0 .5rem;
+        }
+    }
+}
