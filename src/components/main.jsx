@@ -9,7 +9,7 @@ const Main = (props) => {
             <section className="section-about">
                 <div className="u-center-text u-margin-bottom-big">
                     <h2 className="heading-secondary">
-                        Exciting new content!
+                        About
                     </h2>
                 </div>
 
@@ -19,7 +19,10 @@ const Main = (props) => {
                             A little about me
                         </h3>
                         <p className="para u-margin-bottom-medium">
-                            I could tell you that I love web development, but then again, I wouldn't be making a website about myself.
+                            I could tell you that I love web development, but then again, 
+                            I wouldn't be making a website about myself. I am a graduate of CUNY Brooklyn College with
+                            a degree in computer science. My first language was Java, which I hold a certification in, 
+                            but I have since transitioned into web development. I currently work as a contractor under Cognizant.
                         </p>
                         <a href="#" className="btn-text">More &rarr;</a>
                     </div>

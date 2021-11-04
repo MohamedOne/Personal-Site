@@ -22,6 +22,9 @@ const Cards = (props) => {
                                     LinkedIn
                                 </span>
                             </h4>
+                            <p className="card__content card__content--1">
+                                View my profile on LinkedIn
+                            </p>
                         </div>
                         <div className="card__side card__side--back card__side--back-1">
 
@@ -30,7 +33,7 @@ const Cards = (props) => {
                 </div>
                 <div className="col-1-3">
                     <div className="card">
-                        <div className="card__side card__side--front">
+                        <div className="card__side card__side--front ">
                             <div className="card__picture card__picture--2">
 
                             </div>
@@ -39,6 +42,9 @@ const Cards = (props) => {
                                     Github
                                 </span>
                             </h4>
+                            <p className="card__content card__content--2">
+                                View my profile on Github
+                            </p>
                         </div>
                         <div className="card__side card__side--back card__side--back-2">
 
@@ -55,6 +61,9 @@ const Cards = (props) => {
                                     Resume
                                 </span>
                             </h4>
+                            <p className="card__content card__content--3">
+                                View my resume
+                            </p>
                         </div>
                         <div className="card__side card__side--back card__side--back-3">
 

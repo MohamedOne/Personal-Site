@@ -8,7 +8,7 @@
     width: inherit;
     height: inherit;
     clip-path: polygon(0% 0%, 100% 0%, 100% 82%, 0% 100%);
-    background: linear-gradient(to right bottom, rgba($color-light, .8), rgba($color-dark, .8));
+    background-image: linear-gradient(to right bottom, rgba($color-light, .8), rgba($color-dark, .8)), url('../img/image-head.jpg');
     background-size: cover;
     background-position: top;
 
@@ -41,10 +41,18 @@
 
     &__main {
         display: block;
-        font-size: 30px;
+        font-size: 75px;
         font-weight: 600;
-        letter-spacing: 17.5px;
+        letter-spacing: 20.5px;
         animation: moveInLeft 1s;
+
+        &--2 {
+            display: block;
+            font-size: 85px;
+            font-weight: 600;
+            letter-spacing: 32.5px;
+            animation: moveInLeft 1s;
+        }
     }
 
     &__sub {
